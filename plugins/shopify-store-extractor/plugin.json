@@ -1,0 +1,42 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "shopify-store-extractor",
+  "version": "1.0.0",
+  "description": "Export public Shopify products, prices, SKUs, variants and availability; compare storefront snapshots. Optional published inventory, panels and recommendations cost extra. Missing inventory is unknown, not zero; report partial coverage.",
+  "author": {
+    "name": "Myworkingmemory LLC",
+    "email": "dean@myworkingmemory.ai",
+    "url": "https://www.myworkingmemory.ai"
+  },
+  "homepage": "https://apify.com/myworkingmemory/shopify-store-extractor",
+  "repository": "https://github.com/myworkingmemory/apify-agent-plugins",
+  "keywords": [
+    "apify",
+    "mcp",
+    "codex",
+    "shopify-store-extractor"
+  ],
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Shopify Catalog Export",
+        "shortDescription": "Prices, variants and stock",
+        "longDescription": "Export public Shopify products, prices, SKUs, variants and availability; compare storefront snapshots. Optional published inventory, panels and recommendations cost extra. Missing inventory is unknown, not zero; report partial coverage. Connect your own Apify account through OAuth. Runs are billed to that account under the Actor\u2019s current pricing; ChatGPT or Codex subscription fees do not include Apify charges.",
+        "developerName": "Myworkingmemory LLC",
+        "category": "Productivity",
+        "capabilities": [
+          "Shopify Catalog Export"
+        ],
+        "websiteURL": "https://apify.com/myworkingmemory/shopify-store-extractor",
+        "supportURL": "https://github.com/myworkingmemory/apify-agent-plugins/issues",
+        "defaultPrompt": [
+          "Export 10 public products from allbirds.com, including variants, with a $0.02 spending limit."
+        ],
+        "composerIcon": "./assets/icon.svg",
+        "logo": "./assets/icon.svg",
+        "privacyPolicyURL": "https://github.com/myworkingmemory/apify-agent-plugins/blob/main/docs/privacy.md",
+        "termsOfServiceURL": "https://github.com/myworkingmemory/apify-agent-plugins/blob/main/docs/terms.md"
+      }
+    }
+  }
+}

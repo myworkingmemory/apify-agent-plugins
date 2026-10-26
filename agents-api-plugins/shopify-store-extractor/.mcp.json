@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "myworkingmemory-apify": {
+      "type": "http",
+      "url": "https://mcp.apify.com?tools=myworkingmemory/shopify-store-extractor,fetch-actor-details,call-actor&telemetry-enabled=false",
+      "bearer_token_env_var": "APIFY_TOKEN"
+    }
+  }
+}

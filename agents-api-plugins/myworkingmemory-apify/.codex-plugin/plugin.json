@@ -1,0 +1,32 @@
+{
+  "name": "myworkingmemory-apify",
+  "version": "1.0.0",
+  "description": "Use Myworkingmemory LLC\u2019s metered Apify Actors for public Shopify catalogs, ordinary document metadata cleanup, email verification and curated software discovery. Each customer connects their own Apify account; pricing and third-party supplier costs apply.",
+  "skills": "./skills/",
+  "mcpServers": "./.mcp.json",
+  "author": {
+    "name": "Myworkingmemory LLC",
+    "email": "dean@myworkingmemory.ai",
+    "url": "https://www.myworkingmemory.ai"
+  },
+  "interface": {
+    "displayName": "Myworkingmemory Apify Tools",
+    "shortDescription": "Catalogs, documents and data",
+    "longDescription": "Use Myworkingmemory LLC\u2019s metered Apify Actors for public Shopify catalogs, ordinary document metadata cleanup, email verification and curated software discovery. Each customer connects their own Apify account; pricing and third-party supplier costs apply. Connect your own Apify account through OAuth. Runs are billed to that account under the Actor\u2019s current pricing; ChatGPT or Codex subscription fees do not include Apify charges.",
+    "developerName": "Myworkingmemory LLC",
+    "category": "Productivity",
+    "capabilities": [
+      "Shopify Catalog Export",
+      "Apify Document Cleaner",
+      "Apify Email Verification",
+      "Curated Software Finds"
+    ],
+    "websiteURL": "https://apify.com/myworkingmemory",
+    "supportURL": "https://github.com/myworkingmemory/apify-agent-plugins/issues",
+    "defaultPrompt": [
+      "Show the four available tools and their current prices before running anything."
+    ],
+    "composerIcon": "./assets/icon.svg",
+    "logo": "./assets/icon.svg"
+  }
+}

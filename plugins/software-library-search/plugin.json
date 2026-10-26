@@ -1,0 +1,42 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "software-library-search",
+  "version": "1.0.0",
+  "description": "Search a curated catalog of GitHub tools and Hugging Face models. Return original source links, available setup notes and review dates. Results are a dated curated collection, not an exhaustive live search; the Actor does not install or run the listed tools.",
+  "author": {
+    "name": "Myworkingmemory LLC",
+    "email": "dean@myworkingmemory.ai",
+    "url": "https://www.myworkingmemory.ai"
+  },
+  "homepage": "https://apify.com/myworkingmemory/software-library-search",
+  "repository": "https://github.com/myworkingmemory/apify-agent-plugins",
+  "keywords": [
+    "apify",
+    "mcp",
+    "codex",
+    "software-library-search"
+  ],
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Curated Software Finds",
+        "shortDescription": "Find curated tools and models",
+        "longDescription": "Search a curated catalog of GitHub tools and Hugging Face models. Return original source links, available setup notes and review dates. Results are a dated curated collection, not an exhaustive live search; the Actor does not install or run the listed tools. Connect your own Apify account through OAuth. Runs are billed to that account under the Actor\u2019s current pricing; ChatGPT or Codex subscription fees do not include Apify charges.",
+        "developerName": "Myworkingmemory LLC",
+        "category": "Productivity",
+        "capabilities": [
+          "Curated Software Finds"
+        ],
+        "websiteURL": "https://apify.com/myworkingmemory/software-library-search",
+        "supportURL": "https://github.com/myworkingmemory/apify-agent-plugins/issues",
+        "defaultPrompt": [
+          "Find curated PDF tools and show their source links and review dates, within $0.01."
+        ],
+        "composerIcon": "./assets/icon.svg",
+        "logo": "./assets/icon.svg",
+        "privacyPolicyURL": "https://github.com/myworkingmemory/apify-agent-plugins/blob/main/docs/privacy.md",
+        "termsOfServiceURL": "https://github.com/myworkingmemory/apify-agent-plugins/blob/main/docs/terms.md"
+      }
+    }
+  }
+}

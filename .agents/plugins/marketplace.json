@@ -1,0 +1,68 @@
+{
+  "name": "myworkingmemory-apify",
+  "interface": {
+    "displayName": "Myworkingmemory Apify Tools"
+  },
+  "plugins": [
+    {
+      "name": "shopify-store-extractor",
+      "source": {
+        "source": "local",
+        "path": "./plugins/shopify-store-extractor"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "document-metadata-cleaner",
+      "source": {
+        "source": "local",
+        "path": "./plugins/document-metadata-cleaner"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "email-verifier-bulk",
+      "source": {
+        "source": "local",
+        "path": "./plugins/email-verifier-bulk"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "software-library-search",
+      "source": {
+        "source": "local",
+        "path": "./plugins/software-library-search"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "myworkingmemory-apify",
+      "source": {
+        "source": "local",
+        "path": "./plugins/myworkingmemory-apify"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}

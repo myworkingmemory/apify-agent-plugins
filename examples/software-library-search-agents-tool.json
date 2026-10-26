@@ -1,0 +1,10 @@
+{
+  "type": "mcp",
+  "server_label": "myworkingmemory_apify",
+  "transport": {
+    "type": "http",
+    "server_url": "https://mcp.apify.com?tools=myworkingmemory/software-library-search,fetch-actor-details,call-actor&telemetry-enabled=false"
+  },
+  "connection_origin": "service",
+  "required": true
+}

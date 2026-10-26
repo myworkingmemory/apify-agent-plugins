@@ -1,0 +1,7 @@
+{
+  "type": "mcp",
+  "server_label": "myworkingmemory_apify",
+  "server_description": "Export public Shopify products, prices, SKUs, variants and availability; compare storefront snapshots. Optional published inventory, panels and recommendations cost extra. Missing inventory is unknown, not zero; report partial coverage.",
+  "server_url": "https://mcp.apify.com?tools=myworkingmemory/shopify-store-extractor,fetch-actor-details,call-actor&telemetry-enabled=false",
+  "require_approval": "always"
+}

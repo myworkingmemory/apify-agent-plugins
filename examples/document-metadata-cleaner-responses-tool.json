@@ -1,0 +1,7 @@
+{
+  "type": "mcp",
+  "server_label": "myworkingmemory_apify",
+  "server_description": "Inspect ordinary PDF and DOCX metadata and create a separately verified cleaned copy. Inspect before cleaning and obtain any required approval for content changes. This is not redaction or guaranteed anonymization.",
+  "server_url": "https://mcp.apify.com?tools=myworkingmemory/document-metadata-cleaner,fetch-actor-details,call-actor&telemetry-enabled=false",
+  "require_approval": "always"
+}

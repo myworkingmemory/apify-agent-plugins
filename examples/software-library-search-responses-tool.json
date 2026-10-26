@@ -1,0 +1,7 @@
+{
+  "type": "mcp",
+  "server_label": "myworkingmemory_apify",
+  "server_description": "Search a curated catalog of GitHub tools and Hugging Face models. Return original source links, available setup notes and review dates. Results are a dated curated collection, not an exhaustive live search; the Actor does not install or run the listed tools.",
+  "server_url": "https://mcp.apify.com?tools=myworkingmemory/software-library-search,fetch-actor-details,call-actor&telemetry-enabled=false",
+  "require_approval": "always"
+}

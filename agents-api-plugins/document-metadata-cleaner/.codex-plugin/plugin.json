@@ -1,0 +1,29 @@
+{
+  "name": "document-metadata-cleaner",
+  "version": "1.0.0",
+  "description": "Inspect ordinary PDF and DOCX metadata and create a separately verified cleaned copy. Inspect before cleaning and obtain any required approval for content changes. This is not redaction or guaranteed anonymization.",
+  "skills": "./skills/",
+  "mcpServers": "./.mcp.json",
+  "author": {
+    "name": "Myworkingmemory LLC",
+    "email": "dean@myworkingmemory.ai",
+    "url": "https://www.myworkingmemory.ai"
+  },
+  "interface": {
+    "displayName": "Apify Document Cleaner",
+    "shortDescription": "Inspect and clean PDF or DOCX",
+    "longDescription": "Inspect ordinary PDF and DOCX metadata and create a separately verified cleaned copy. Inspect before cleaning and obtain any required approval for content changes. This is not redaction or guaranteed anonymization. Connect your own Apify account through OAuth. Runs are billed to that account under the Actor\u2019s current pricing; ChatGPT or Codex subscription fees do not include Apify charges.",
+    "developerName": "Myworkingmemory LLC",
+    "category": "Productivity",
+    "capabilities": [
+      "Apify Document Cleaner"
+    ],
+    "websiteURL": "https://apify.com/myworkingmemory/document-metadata-cleaner",
+    "supportURL": "https://github.com/myworkingmemory/apify-agent-plugins/issues",
+    "defaultPrompt": [
+      "Inspect the metadata in my selected ordinary PDF before making any changes."
+    ],
+    "composerIcon": "./assets/icon.svg",
+    "logo": "./assets/icon.svg"
+  }
+}
