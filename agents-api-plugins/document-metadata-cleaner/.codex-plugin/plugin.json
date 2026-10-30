@@ -12,7 +12,7 @@
   "interface": {
     "displayName": "Apify Document Cleaner",
     "shortDescription": "Inspect and clean PDF or DOCX",
-    "longDescription": "Inspect ordinary PDF and DOCX metadata and create a separately verified cleaned copy. Inspect before cleaning and obtain any required approval for content changes. This is not redaction or guaranteed anonymization. Connect your own Apify account through OAuth. Runs are billed to that account under the Actor\u2019s current pricing; ChatGPT or Codex subscription fees do not include Apify charges.",
+    "longDescription": "Inspect ordinary PDF and DOCX metadata and create a separately verified cleaned copy. Inspect before cleaning and obtain any required approval for content changes. This is not redaction or guaranteed anonymization. Connect your own Apify account through OAuth. Runs are billed to that account under the Actor’s current pricing; ChatGPT or Codex subscription fees do not include Apify charges.",
     "developerName": "Myworkingmemory LLC",
     "category": "Productivity",
     "capabilities": [

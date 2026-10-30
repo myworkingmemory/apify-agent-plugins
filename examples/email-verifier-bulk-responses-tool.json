@@ -1,7 +1,0 @@
-{
-  "type": "mcp",
-  "server_label": "myworkingmemory_apify",
-  "server_description": "Verify email lists or Apify datasets with the customer\u2019s MillionVerifier key or the limited keyless pilot when available. Supplier credits are separate for BYOK; duplicates, unknowns, catch-alls and errors have no result fee. Never promise deliverability.",
-  "server_url": "https://mcp.apify.com?tools=myworkingmemory/email-verifier-bulk,fetch-actor-details,call-actor&telemetry-enabled=false",
-  "require_approval": "always"
-}

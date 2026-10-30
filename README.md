@@ -1,6 +1,6 @@
 # Myworkingmemory Apify agent plugins
 
-Connect customer-owned AI agents to Myworkingmemory LLC’s public, metered Apify Actors: Shopify catalog exports, ordinary PDF/DOCX metadata cleanup, email verification, and curated GitHub/Hugging Face discovery.
+Connect customer-owned AI agents to Myworkingmemory LLC’s public, metered Apify Actors: Shopify catalog exports, ordinary PDF/DOCX metadata cleanup, and curated GitHub/Hugging Face discovery.
 
 Each customer authenticates their own Apify account. Successful billable events use the Actor’s published Apify pricing; Apify settlement determines publisher revenue. OpenAI subscription or API charges are separate. Installing a plugin does not itself start a paid run.
 
@@ -10,9 +10,8 @@ Each customer authenticates their own Apify account. Successful billable events 
 |---|---|---|
 | Shopify Catalog Export | Public products, variants, prices, availability, optional published inventory | [Shopify Store Extractor](https://apify.com/myworkingmemory/shopify-store-extractor) |
 | Apify Document Cleaner | Inspect and clean supported PDF/DOCX metadata | [Document Metadata Cleaner](https://apify.com/myworkingmemory/document-metadata-cleaner) |
-| Apify Email Verification | Lists and datasets; BYOK or available capped keyless pilot | [Email Verifier](https://apify.com/myworkingmemory/email-verifier-bulk) |
 | Curated Software Finds | Curated GitHub tools and Hugging Face models with review dates | [Software Library Search](https://apify.com/myworkingmemory/software-library-search) |
-| Myworkingmemory Apify Tools | All four workflows in one installation | [Publisher](https://apify.com/myworkingmemory) |
+| Myworkingmemory Apify Tools | All three workflows in one installation | [Publisher](https://apify.com/myworkingmemory) |
 
 Choose individual plugins or the bundle; installing both duplicates the tools.
 
@@ -62,11 +61,11 @@ For environment-based plugins, `agents-api-plugins/` contains compatibility pack
 4. Poll the returned run ID when needed, then retrieve the returned dataset or key-value record.
 5. Report actual results and partial coverage; never count owner tests as customer revenue.
 
-Document cleanup is not redaction or a guarantee of anonymity; inspect first and respect content-change approvals. Email checks do not guarantee delivery or authorize outreach. The curated software catalog is dated and finite. Storefront data can be incomplete or inaccessible.
+Document cleanup is not redaction or a guarantee of anonymity; inspect first and respect content-change approvals. The curated software catalog is dated and finite. Storefront data can be incomplete or inaccessible.
 
 ## Discovery and publication status
 
-The four public Actors were verified through Apify MCP `tools/list` and `fetch-actor-details` on October 26, 2026. These checks did not execute paid Actor runs. New-customer OAuth installation and model-driven execution through every OpenAI surface have not been verified by those protocol checks.
+The remaining public Actors were verified through Apify MCP `tools/list` and `fetch-actor-details` on October 26, 2026. These checks did not execute paid Actor runs. New-customer OAuth installation and model-driven execution through every OpenAI surface have not been verified by those protocol checks.
 
 This repository distributes packages; it does not claim OpenAI public-directory approval. Universal-directory publication requires a separate publisher submission, eligible endpoint/domain verification, authentication, legal URLs, review materials, approval and publication. Apify owns `mcp.apify.com`; owning these Actors does not establish ownership of that hostname. Do not substitute a publisher API token or mislabel authenticated access as anonymous.
 

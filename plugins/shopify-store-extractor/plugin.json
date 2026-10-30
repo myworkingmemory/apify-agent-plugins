@@ -21,7 +21,7 @@
       "interface": {
         "displayName": "Shopify Catalog Export",
         "shortDescription": "Prices, variants and stock",
-        "longDescription": "Export public Shopify products, prices, SKUs, variants and availability; compare storefront snapshots. Optional published inventory, panels and recommendations cost extra. Missing inventory is unknown, not zero; report partial coverage. Connect your own Apify account through OAuth. Runs are billed to that account under the Actor\u2019s current pricing; ChatGPT or Codex subscription fees do not include Apify charges.",
+        "longDescription": "Export public Shopify products, prices, SKUs, variants and availability; compare storefront snapshots. Optional published inventory, panels and recommendations cost extra. Missing inventory is unknown, not zero; report partial coverage. Connect your own Apify account through OAuth. Runs are billed to that account under the Actor’s current pricing; ChatGPT or Codex subscription fees do not include Apify charges.",
         "developerName": "Myworkingmemory LLC",
         "category": "Productivity",
         "capabilities": [

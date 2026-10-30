@@ -21,7 +21,7 @@
       "interface": {
         "displayName": "Curated Software Finds",
         "shortDescription": "Find curated tools and models",
-        "longDescription": "Search a curated catalog of GitHub tools and Hugging Face models. Return original source links, available setup notes and review dates. Results are a dated curated collection, not an exhaustive live search; the Actor does not install or run the listed tools. Connect your own Apify account through OAuth. Runs are billed to that account under the Actor\u2019s current pricing; ChatGPT or Codex subscription fees do not include Apify charges.",
+        "longDescription": "Search a curated catalog of GitHub tools and Hugging Face models. Return original source links, available setup notes and review dates. Results are a dated curated collection, not an exhaustive live search; the Actor does not install or run the listed tools. Connect your own Apify account through OAuth. Runs are billed to that account under the Actor’s current pricing; ChatGPT or Codex subscription fees do not include Apify charges.",
         "developerName": "Myworkingmemory LLC",
         "category": "Productivity",
         "capabilities": [

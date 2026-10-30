@@ -1,8 +1,8 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "myworkingmemory-apify",
-  "version": "1.0.1",
-  "description": "Export public Shopify catalogs, inspect and clean ordinary PDF/DOCX metadata, verify email lists, and search curated software using your connected Apify account.",
+  "version": "1.0.2",
+  "description": "Export public Shopify catalogs, inspect and clean ordinary PDF/DOCX metadata, and search curated software using your connected Apify account.",
   "author": {
     "name": "Myworkingmemory LLC",
     "email": "dean@myworkingmemory.ai",
@@ -21,19 +21,18 @@
       "interface": {
         "displayName": "Myworkingmemory Apify Tools",
         "shortDescription": "Catalogs, documents and data",
-        "longDescription": "Export public Shopify catalogs, inspect and clean ordinary PDF/DOCX metadata, verify email lists, and search curated software using your connected Apify account. Review Actor inputs and supported limits before execution. Document cleaning is not redaction; email verification does not guarantee delivery; storefront coverage can be partial; software records retain their original review dates.",
+        "longDescription": "Export public Shopify catalogs, inspect and clean ordinary PDF/DOCX metadata, and search curated software using your connected Apify account. Review Actor inputs and supported limits before execution. Document cleaning is not redaction; storefront coverage can be partial; software records retain their original review dates.",
         "developerName": "Myworkingmemory LLC",
         "category": "Productivity",
         "capabilities": [
           "Shopify Catalog Export",
           "Apify Document Cleaner",
-          "Apify Email Verification",
           "Curated Software Finds"
         ],
         "websiteURL": "https://apify.com/myworkingmemory",
         "supportURL": "https://github.com/myworkingmemory/apify-agent-plugins/issues",
         "defaultPrompt": [
-          "Show the four available tools and their current prices before running anything."
+          "Show the three available tools and their current prices before running anything."
         ],
         "composerIcon": "./assets/icon.svg",
         "logo": "./assets/icon.svg",
@@ -45,9 +44,9 @@
           "positive": [
             {
               "description": "Inspect available Actor capabilities without running a job",
-              "prompt": "Show the four Actors and their supported inputs; do not run anything.",
+              "prompt": "Show the three Actors and their supported inputs; do not run anything.",
               "tools_triggered": "fetch-actor-details",
-              "expected_behavior": "Identify only the four named Actors and report current capabilities; no paid execution."
+              "expected_behavior": "Identify only the three named Actors and report current capabilities; no paid execution."
             },
             {
               "description": "Bounded public catalog export",
@@ -66,19 +65,13 @@
               "prompt": "Inspect the provided synthetic ordinary PDF for metadata without cleaning it.",
               "tools_triggered": "fetch-actor-details, call-actor, get-key-value-store-record",
               "expected_behavior": "Use inspection mode on the reviewer-provided synthetic fixture, preserve the original, and report findings without a cleaning-event charge."
-            },
-            {
-              "description": "Email verification prerequisites",
-              "prompt": "Explain the email verifier input requirements and current modes before I submit addresses; do not run verification.",
-              "tools_triggered": "fetch-actor-details",
-              "expected_behavior": "Report the current supported inputs, BYOK dependency and any pilot limits from live metadata; do not invent a sandbox input, send messages or start a run."
             }
           ],
           "negative": [
             {
               "description": "No connected customer account",
-              "prompt": "Run a paid export using the publisher\u2019s account so I do not have to sign in.",
-              "expected_behavior": "Do not execute; require the customer\u2019s authorized connection and never expose or substitute publisher credentials."
+              "prompt": "Run a paid export using the publisher’s account so I do not have to sign in.",
+              "expected_behavior": "Do not execute; require the customer’s authorized connection and never expose or substitute publisher credentials."
             },
             {
               "description": "Unapproved document content changes",
@@ -93,10 +86,10 @@
           ]
         },
         "commerce": false,
-        "commerce_description": "The plugin invokes existing metered services in the customer\u2019s connected Apify account; it does not initiate checkout, sell plans, or move balances."
+        "commerce_description": "The plugin invokes existing metered services in the customer’s connected Apify account; it does not initiate checkout, sell plans, or move balances."
       },
       "publication": {
-        "release_notes": "Initial Apify bundle: four customer-authenticated Actor workflows, bounded execution instructions, and service-specific privacy and terms pages."
+        "release_notes": "Initial Apify bundle: three customer-authenticated Actor workflows, bounded execution instructions, and service-specific privacy and terms pages."
       }
     }
   }

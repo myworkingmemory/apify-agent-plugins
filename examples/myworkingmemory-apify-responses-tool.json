@@ -1,7 +1,7 @@
 {
   "type": "mcp",
   "server_label": "myworkingmemory_apify",
-  "server_description": "Use Myworkingmemory LLC\u2019s metered Apify Actors for public Shopify catalogs, ordinary document metadata cleanup, email verification and curated software discovery. Each customer connects their own Apify account; pricing and third-party supplier costs apply.",
-  "server_url": "https://mcp.apify.com?tools=myworkingmemory/shopify-store-extractor,myworkingmemory/document-metadata-cleaner,myworkingmemory/email-verifier-bulk,myworkingmemory/software-library-search,fetch-actor-details,call-actor&telemetry-enabled=false",
+  "server_description": "Use Myworkingmemory LLC’s metered Apify Actors for public Shopify catalogs, ordinary document metadata cleanup and curated software discovery. Each customer connects their own Apify account; pricing and third-party supplier costs apply.",
+  "server_url": "https://mcp.apify.com?tools=myworkingmemory/shopify-store-extractor,myworkingmemory/document-metadata-cleaner,myworkingmemory/software-library-search,fetch-actor-details,call-actor&telemetry-enabled=false",
   "require_approval": "always"
 }

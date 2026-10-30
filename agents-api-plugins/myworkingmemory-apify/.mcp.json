@@ -2,7 +2,7 @@
   "mcpServers": {
     "myworkingmemory-apify": {
       "type": "http",
-      "url": "https://mcp.apify.com?tools=myworkingmemory/shopify-store-extractor,myworkingmemory/document-metadata-cleaner,myworkingmemory/email-verifier-bulk,myworkingmemory/software-library-search,fetch-actor-details,call-actor&telemetry-enabled=false",
+      "url": "https://mcp.apify.com?tools=myworkingmemory/shopify-store-extractor,myworkingmemory/document-metadata-cleaner,myworkingmemory/software-library-search,fetch-actor-details,call-actor&telemetry-enabled=false",
       "bearer_token_env_var": "APIFY_TOKEN"
     }
   }
