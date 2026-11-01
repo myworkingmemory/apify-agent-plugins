@@ -5,6 +5,18 @@
   },
   "plugins": [
     {
+      "name": "youtube-transcripts-research",
+      "source": {
+        "source": "local",
+        "path": "./plugins/youtube-transcripts-research"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
       "name": "shopify-store-extractor",
       "source": {
         "source": "local",

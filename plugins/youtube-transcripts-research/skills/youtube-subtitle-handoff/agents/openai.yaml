@@ -1,0 +1,7 @@
+dependencies:
+  tools:
+    - type: "mcp"
+      value: "myworkingmemory-apify"
+      description: "Read returned SRT/WebVTT text through customer OAuth; use existing host text-file capabilities only."
+      transport: "streamable_http"
+      url: "https://www.myworkingmemory.ai/api/apify/mcp"

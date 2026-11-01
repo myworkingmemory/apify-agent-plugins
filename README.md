@@ -1,6 +1,6 @@
 # Myworkingmemory Apify agent plugins
 
-Connect customer-owned AI agents to Myworkingmemory LLC’s public, metered Apify Actors: Shopify catalog exports, ordinary PDF/DOCX metadata cleanup, and curated GitHub/Hugging Face discovery.
+Connect customer-owned AI agents to Myworkingmemory’s public, metered Apify Actors: existing YouTube captions and research, Shopify catalog exports, ordinary PDF/DOCX metadata cleanup, and curated GitHub/Hugging Face discovery.
 
 Each customer authenticates their own Apify account. Successful billable events use the Actor’s published Apify pricing; Apify settlement determines publisher revenue. OpenAI subscription or API charges are separate. Installing a plugin does not itself start a paid run.
 
@@ -8,6 +8,7 @@ Each customer authenticates their own Apify account. Successful billable events 
 
 | Plugin | What to use it for | Actor |
 |---|---|---|
+| [YouTube Transcripts & Research](plugins/youtube-transcripts-research/) | Existing captions, timestamped research and SRT/WebVTT through the focused company gateway | [YouTube caption Actor](https://apify.com/myworkingmemory/wicked-youtube-transcript-scraper-api) |
 | Shopify Catalog Export | Public products, variants, prices, availability, optional published inventory | [Shopify Store Extractor](https://apify.com/myworkingmemory/shopify-store-extractor) |
 | Apify Document Cleaner | Inspect and clean supported PDF/DOCX metadata | [Document Metadata Cleaner](https://apify.com/myworkingmemory/document-metadata-cleaner) |
 | Curated Software Finds | Curated GitHub tools and Hugging Face models with review dates | [Software Library Search](https://apify.com/myworkingmemory/software-library-search) |
@@ -23,7 +24,18 @@ codex plugin marketplace add myworkingmemory/apify-agent-plugins
 
 Open the Plugins Directory in the desktop app, select **Myworkingmemory Apify Tools**, install the desired plugin and complete its Apify OAuth connection using your own account. Client availability varies; the public Git catalog is distinct from an OpenAI-approved directory listing.
 
-The catalog lives at `.agents/plugins/marketplace.json`; each portable package lives under `plugins/`. ZIPs are attached to the repository release.
+The catalog lives at `.agents/plugins/marketplace.json`; each portable package lives under `plugins/`. Existing release ZIPs cover the original packages; install the YouTube edition from the Git marketplace commands below.
+
+## Install YouTube Transcripts & Research
+
+```sh
+codex plugin marketplace add myworkingmemory/apify-agent-plugins
+codex plugin add youtube-transcripts-research@myworkingmemory-apify
+```
+
+This focused package includes four skills and the company-hosted YouTube MCP gateway. Use the normal OAuth flow with your own Apify account. Ask for product information first without starting a run, then authorize a bounded caption request when ready. Extraction follows current Apify pricing; installation starts no extraction. [Setup and examples](plugins/youtube-transcripts-research/README.md).
+
+The existing multi-product bundle covers the original three workflows. Install the separate YouTube package to add caption research; existing packages are preserved.
 
 ## Other companies’ ChatGPT workspaces
 
@@ -43,17 +55,23 @@ The endpoint exposes Actor metadata and execution helpers. `call-actor` is Apify
 
 ## OpenAI Responses API
 
+The existing `examples/*` files below cover the original workflows. For YouTube, use the focused gateway and its [package setup](plugins/youtube-transcripts-research/README.md); do not substitute the multi-Actor configuration.
+
 Use an `examples/*-responses-tool.json` object in the request’s `tools` array; inject the customer's OAuth access token or Apify token in the tool’s `authorization` field at runtime. Never commit it. The supplied configuration uses `require_approval: "always"`; handle returned approval requests using your application's user consent flow. A developer can implement previously authorized automation under their own tool policy.
 
 The model can select a relevant exposed tool when the user's task calls for it. This is not a global registry: the application must include the MCP tool configuration first. OpenAI API usage and Apify Actor usage are billed separately.
 
 ## OpenAI Agents API
 
+The compatibility packages below cover the original workflows; this release adds the focused YouTube package under `plugins/youtube-transcripts-research/`.
+
 Use an `examples/*-agents-tool.json` object in `agent.tools`. Authenticate with the customer's `transport.authorization` value (`Bearer <token>`) injected at session creation, or a matching service-origin vault credential. Never store that value in an agent definition or public ZIP.
 
 For environment-based plugins, `agents-api-plugins/` contains compatibility packages with `.codex-plugin/plugin.json` and `.mcp.json`; the latter reads `APIFY_TOKEN` from the customer-controlled environment. Self-hosted environments register each plugin root in `environment.capability_directories`. OpenAI-hosted environments accept one plugin ZIP through `environment.plugins` and can reuse setup through environment templates. Authentication and runtime environment setup remain the customer's responsibility.
 
 ## Reliable paid execution
+
+The following generic runner sequence applies to the original packages. The YouTube gateway uses `myworkingmemory--wicked-youtube-transcript-scraper-api` with its discovered top-level `maxTotalChargeUsd` and optional `timeout`; it does not expose `call-actor`. Follow the [YouTube package instructions](plugins/youtube-transcripts-research/README.md) and inspect its actual schema.
 
 1. Read `fetch-actor-details` for the chosen Actor’s current input fields and tier-specific pricing.
 2. Establish the user's scope and spending ceiling before a paid run.
