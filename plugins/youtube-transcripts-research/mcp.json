@@ -3,25 +3,7 @@
   "mcpServers": {
     "myworkingmemory-apify": {
       "type": "streamable-http",
-      "url": "https://www.myworkingmemory.ai/api/apify/mcp",
-      "extensions": {
-        "com.openai": {
-          "auth": {
-            "type": "oauth",
-            "client": {
-              "mode": "dcr"
-            },
-            "authorizationServerBase": "https://www.myworkingmemory.ai/api/apify",
-            "authorizationUrl": "https://www.myworkingmemory.ai/api/apify/oauth/authorize",
-            "tokenUrl": "https://www.myworkingmemory.ai/api/apify/oauth/token",
-            "registrationUrl": "https://www.myworkingmemory.ai/api/apify/oauth/register",
-            "resource": "https://www.myworkingmemory.ai/api/apify/mcp",
-            "baseScopes": [
-              "apify:run"
-            ]
-          }
-        }
-      }
+      "url": "https://www.myworkingmemory.ai/api/apify/mcp"
     }
   }
 }

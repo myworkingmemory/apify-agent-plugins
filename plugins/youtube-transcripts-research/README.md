@@ -37,4 +37,6 @@ This package exposes the focused YouTube gateway rather than the generic multi-A
 
 [Product, saved previews and current pricing](https://www.myworkingmemory.ai/wicked-youtube-transcript-api.html) · [Detailed API/MCP recipes](https://www.myworkingmemory.ai/youtube-transcripts-research/agent-workflows.md) · [Public API examples](https://github.com/myworkingmemory/youtube-transcript-api)
 
-Version 1.2.4. Publisher: Myworkingmemory. Support: dean@myworkingmemory.ai. Current Apify pricing applies to the connected customer account; installing this package is not an Apify plan purchase.
+Version 1.2.5. Publisher: Myworkingmemory. Support: dean@myworkingmemory.ai. Current Apify pricing applies to the connected customer account; installing this package is not an Apify plan purchase.
+
+The root `mcp.json` declares the hosted Streamable HTTP connection. The gateway advertises its authorization server and scopes through OAuth discovery; no token is packaged.
